@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    grid-template-columns: repeat(4 ,8rem);
+    gap: 0.5rem;
+    background-color: gray;
+    padding-top: 3rem;
+    
+}
+.stop_game {
+    pointer-events: none;
+}
+.card {
+    background-color: white;
+    display: grid;
+    place-content: center;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 9px;
+    transition: 0.5s;
+}
+.unKnown {
+    background-image: url('images/Untitled.png');
+    background-position: center;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+.card img{
+    object-fit: contain;
+    width: 7rem;
+    transition: 0.5s;
+    transform: rotateY(180deg);
+}
+.card.rotate {
+    transition: 0.5s;
+    transform: rotateY(180deg);
+}
+.position-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.position-2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.position-3 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.position-4 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.position-5 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.position-6 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.position-2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.position-2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.position-2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.mistakes_container {
+    position: absolute;
+    right: 0;
+    top: 2%;
+    background: rgb(97, 141, 218);
+    color: rgb(255, 255, 255);
+    padding: 0.8rem;
+    padding-right: 1rem;
+    font-weight: bold;
+}
