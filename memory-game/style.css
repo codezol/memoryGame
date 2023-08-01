@@ -100,4 +100,15 @@
         width : 5rem;
     }
 }
-
+@media screen and (max-width:520px) {
+    .container {
+        grid-template-columns: repeat(4, 4rem);
+    }
+    .card {
+        width: 4rem;
+        height: 4rem;
+    }
+    .card img {
+        width : 3rem;
+    }
+}
