@@ -88,3 +88,13 @@
     padding-right: 1rem;
     font-weight: bold;
 }
+@media screen and (max-width:720px) {
+    .container {
+        grid-template-columns: repeat(4, 6rem);
+    }
+    .card {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+}
