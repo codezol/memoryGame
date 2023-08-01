@@ -96,5 +96,8 @@
         width: 6rem;
         height: 6rem;
     }
+    .card img {
+        width : 5rem;
+    }
 }
-}
+
